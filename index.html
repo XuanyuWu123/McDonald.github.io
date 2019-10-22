@@ -10,7 +10,7 @@
 </head>
 <body>
     <a href="HW2.pdf">Download PDF here</a>
-    <div style="background-image: url('mcdonalds.jpg');background-size: 100% 25%;filter: alpha(opacity=60);">
+    <div style="background-image: url('mcdonalds.png');background-size: 100% 25%;filter: alpha(opacity=60);">
     <!-- <img src="mcdonalds.jpg" style = 'width:200px;height:100px;'> -->
     <h1 style = "text-align: center;">Monthly Sales</h1>
     <div id="Monthly" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
@@ -79,6 +79,13 @@
                 
             </script>
 
+<p1 style = "font-size:20px;">
+    It can be seen that, after the introduction of Impossible Whopper by Burger King in October 2018, the sales of 
+    MacDonald's dropped drastically. Besides, before the introduction, the sales were increasing 
+    steadily from 16 million to 23 million. But in the months following October 2018, the increase stopped.
+</p1>
+
+<br>
 
     <div id="MonthlyHM" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
     <script>
@@ -183,6 +190,11 @@
     .add();
         
     </script>
+
+<p2 style = "font-size:20px;">
+    If we look at three different products individually, the relative amount of decrease in last october is really close. 
+    Therefore, the drop of total sales are caused by the decrease in sales of all three products instead of one or two of them.
+</p2>
 
 <div id="MonthlyRegion" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
 <script>
@@ -297,13 +309,12 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
 .add();
     
 </script>
-    <p1 style = "font-size:20px;">
-        It can be seen that, after the introduction of Impossible Whopper by Burger King in October 2018, the sales of 
-        MacDonald's hamburgers dropped drastically. Besides, before the introduction, the sales hanburgers were increasing 
-        steadily from 16 million to 23 million. But in the months following October 2018, the increase stopped.
-    </p1>
 
-    <br>
+    <p3 style = "font-size:20px;">
+        Then we look at sales data in different regions. It can be seen that all the regions are affected similarly. 
+        Therefore, the impact is national instead of regional.
+    </p3>
+
     <div id="MonthlyRegional" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
     <script>
             Highcharts.chart('MonthlyRegional', {
@@ -365,10 +376,10 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 });
                 
             </script>
-    <p3 style = "font-size:20px;">
+    <p4 style = "font-size:20px;">
         Based on total monthly sales in different regions, we can see that the distribution of sales of products in these regions
-        are quite close. The total sales also vary little.
-    </p3>
+        are quite close, meaning that people in different regions have similar preferences. The total sales also vary little.
+    </p4>
     
     <h2 style = "text-align: center; font-size: 30px;">Daily Sales</h2>
 
@@ -423,9 +434,9 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
         });
             </script>
 <br>
-<p3 style = "font-size:20px;">
-        From the average sales on different day of week, there are less sales on weekends compared with weekdays.
-    </p3>
+<p5 style = "font-size:20px;">
+        Based on the average sales data on different day of week, there are less sales on weekends compared with weekdays.
+    </p5>
     <br>
 
     <div id="container3" style="height: 400px; width: 500px;margin-top: 30px;display: inline-block"></div>
@@ -580,10 +591,10 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
     });
         </script>
 <br>
-<p4 style = "font-size:20px;">
-    Looking at different products individually, we can see that sales are lower for hamburgers on Sundays. 
-    They are lower for fish fillet on both Saturdays and Sundays and lower for chicken fillet on Saturdays.
-</p4>
+<p6 style = "font-size:20px;">
+    Looking at different products individually, we can see that their sales are generally lower on weekends.
+    Sales are lower for hamburgers on Sundays. Sales are lower for fish fillet on both Saturdays and Sundays and lower for chicken fillet on Saturdays.
+</p6>
 <div id="DailyRegional" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
     <script>
             Highcharts.chart('DailyRegional', {
@@ -646,9 +657,10 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 
             </script>
             <br>
-    <p6 style = "font-size:20px;">
-        Based on total daily sales in different regions, we can see that the distribution of sales of products
-        in these regions are quite close. The total sales also vary little.
-    </p6>
+    <p7 style = "font-size:20px;">
+        Based on total daily sales in different regions, the distribution of daily sales of products
+        in these regions are quite close. The total sales also vary little, which matches our findings from monthly
+        sales data.
+    </p7>
 </body>
 </html>
