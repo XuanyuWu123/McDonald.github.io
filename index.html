@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Line Chart</title>
+    <title>Analysis of Impact of the Impossible Whopper</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
 </head>
 <body>
-    <!-- <div style="background-image: url('mcdonalds.jpg');background-size: 100% 100%;filter: alpha(opacity=60);"> -->
+    <a href="HW2.pdf">Download PDF here</a>
+    <!-- <div style="background-image: url('mcdonalds.jpg');background-size: 100% 25%;filter: alpha(opacity=60);"> -->
     <!-- <img src="mcdonalds.jpg" style = 'width:200px;height:100px;'> -->
     <h1 style = "text-align: center;">Monthly Sales</h1>
     <div id="Monthly" style="height: 400px; width: 1500px; margin-bottom: 30px;"></div>
@@ -49,11 +50,11 @@
                             11192197, 11824369, 11437109, 11393492, 11596984, 11878171, 11536662, 12559477, 12225562, 11964460, 12532702, 12836124,
                             13048511, 13347771, 12677300, 13251875, 13687830, 12840517, 13338406, 13542320, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:13247269}, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:11374035}, 12299535, 11539095,
                             12558735, 12278447, 12074324, 12250084, 12686117, 11798203, 11547979, 11954952, 11981653]
@@ -116,11 +117,11 @@
             20057322, 21458946, 20453919, 20591121, 20892282, 21502674, 20522490, 22493628, 22058778, 21510873, 22648008, 23123328,
             23663289, 23970684, 22962936, 23842056, 24559179, 22889145, 24037551, 24180750, {marker: {
                     fillColor: '#FF0000',
-                    lineWidth: 2,
+                    lineWidth: 1,
                     lineColor: "#FF0000" 
             }, y:23768763}, {marker: {
                     fillColor: '#FF0000',
-                    lineWidth: 2,
+                    lineWidth: 1,
                     lineColor: "#FF0000" 
             },y:20343702}, 22159206, 20863518,
             22705683, 22050768, 21803397, 21953523, 22862487, 21372525, 20869323, 21571980, 21428580]
@@ -129,11 +130,11 @@
                     1698295, 1759942, 1732267, 1715924, 1754566, 1748524, 1751563, 1888539, 1809174, 1806878, 1887120, 1942176, 
                     1926117, 2028810, 1883343, 2019461, 2063039, 1954050, 1987216, 2014826, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:1997118}, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:1730781}, 1860819, 1710520, 
                     1861751, 1866627, 1802980, 1859086, 1890213, 1752262, 1738859, 1768857, 1815026]},
@@ -143,11 +144,11 @@
                     2808128, 2911445, 2886869, 2813861, 2878324, 2962089, 2944269, 3173062, 3063462, 2987291, 3096246, 3186172,
                     3234631, 3328733, 3139645, 3285062, 3438398, 3256752, 3338673, 3467244, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:3327230}, {marker: {
                             fillColor: '#FF0000',
-                            lineWidth: 2,
+                            lineWidth: 1,
                             lineColor: "#FF0000" 
                     }, y:2862020}, 3052314, 2874069, 
                     3128423, 3061564, 3003545, 3073157, 3175075, 2921766, 2852679, 2995435, 3023767]
@@ -378,7 +379,7 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 backgroundColor: 'rgba(0,0,0,0)'
             },
             title: {
-                text: 'Daily Sales in the U.S. by Weekday'
+                text: 'Daily Sales in the U.S. by Day of Week'
             },
             xAxis: {
                 categories:[
@@ -423,7 +424,7 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
             </script>
 <br>
 <p3 style = "font-size:20px;">
-        From the average sales on different weekdays, there are less sales on weekends compared with workdays.
+        From the average sales on different day of week, there are less sales on weekends compared with weekdays.
     </p3>
     <br>
 
@@ -434,7 +435,7 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 backgroundColor: 'rgba(0,0,0,0)'
             },
             title: {
-                text: 'Sales of Hamburgers in the U.S. by Weekday'
+                text: 'Sales of Hamburgers in the U.S. by Day of Week'
             },
             xAxis: {
                 categories:[
@@ -485,7 +486,7 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 backgroundColor: 'rgba(0,0,0,0)'
             },
         title: {
-            text: 'Sales of Fish Fillet in the U.S. by Weekday'
+            text: 'Sales of Fish Fillet in the U.S. by Day of Week'
         },
         xAxis: {
             categories:[
@@ -535,7 +536,7 @@ chart.customText = chart.renderer.text('show fewer lines!', 1300, 120)
                 backgroundColor: 'rgba(0,0,0,0)'
             },
         title: {
-            text: 'Sales of Chicken Fillet in the U.S. by Weekday'
+            text: 'Sales of Chicken Fillet in the U.S. by Day of Week'
         },
         xAxis: {
             categories:[
