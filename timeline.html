@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+        <script src="https://code.highcharts.com/modules/treemap.js"></script>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+
+        <!-- <div id="container"></div> -->
+        <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+        <p>This is a timeline that tells the story of how Robert Downey Jr., who was first seen as a rising star, 
+            became a drug addict and lastly quit drug and became a successful actor.
+        <br>Click right/left button or the timeline to navigate.</p>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1hRfZeMcCamOwb7HKevLJe-wTXov-VJYCi3x3NZPjVnE&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+       
+        
+        <table width = '100%'>
+                <tr height = '30px'>
+                        <td>
+                        <p id = 'chart2'>
+                            <br><br><br><br>
+                            This is choropleth map chart that shows the global sales of Robert Downey Jr.'s recent movie <i>Avengers: Endgame</i>.
+                            <br>
+                            From the choropleth map chart, United States and China have the highest sales globally, there
+                            is a hige difference between these two countries and others.
+                            <br>
+                            Besides, some European countries and Asian countries also contribute a lot to the sales.
+                            <br>
+                            It is worth-mentioning that most of countries in Africa and Mid-East Asia have no sales data, meaning that 
+                            they did not import this movie.
+                        </p>
+                    </td>
+                    </tr>
+            <tr>
+                <td>
+                        <!-- <div class='tableauPlaceholder' id='viz1574725326322' style='position:relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IronManMap&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript>
+                            <object class='tableauViz'  style='display:none;float:left'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='IronManMap&#47;Sheet1' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IronManMap&#47;Sheet1&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' /></object>
+                            </div>                 -->
+                    <div class='tableauPlaceholder' id='viz1574724905655' style='position:relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AvengersEndgameMap&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript>
+                    <object class='tableauViz'  style='display:none;float:right'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='AvengersEndgameMap&#47;Sheet2' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AvengersEndgameMap&#47;Sheet2&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object>
+                    </div>                
+                </td>
+            </tr>
+            
+
+            <tr height = '30px'>
+                <td>
+                        <p id = 'chart3'>
+                                <br><br><br><br>
+
+                                These are three Word Clouds for Tony Stark, Pepper Rotts, and Jarvis in <i>Iron Man</i> in 2008.
+                                We can click their images and infer their personalities and the main scenario of this movie. 
+                                <br>From Tony's word cloud, 'weapon', 'hand', 'make', 'back' are among the most frequent words, which correspond to
+                                his identity as an industrialist who need to build an suit in the cave to go back to his normal life.
+                                <br>Similarly, from Pepper's word cloud, words like 'Tony', 'Okay', and 'Dont' tell us that she is a secretary of
+                                Tony Stark who listen to Tony's order but also tries to prevent Tony from doing something dangerous.
+                                <br>From Jarvis's word cloud, words like 'power', 'Sir', 'Altitude' demostrate the fact that Jarvis reports 
+                                the stats of the suit to Tony.
+                            </p>
+                <div id ='title' >Word Cloud for Tony Stark</div>
+            </td>
+            </tr>
+            <tr height = '700px'>
+                    <td>
+                        
+
+                        <img src="Tonyword.png" id = 'wordcloud' width = '400px;'>
+                    <!-- HTML -->
+                        <!-- <div id="chartdiv"></div> -->
+                    </td>
+            </tr>
+            <tr height = '100px'>
+                    <td>
+                        <input type="image" src = 'tony.png' alt='Submit' id="tony" height="50px"  width="50px"/>
+                        <input type="image" src ='pepper.jpeg' alt='Submit' id="pepper"  height="50px" width="50px"/>
+                        <input type="image" src ='jarvis.png' alt='Submit' id="jarvis"  height="50px" width="50px"/>
+                        <div id = 'container2'></div>
+                    </td>
+            </tr>
+            <tr height = '200px'>
+
+            </tr>
+        </table>
+
+        <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1574724905655');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='90%';
+        vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+
+        <!-- <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1574725326322');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];   
+        console.log(vizElement);               
+        vizElement.style.width='500px';
+        vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script> -->
+
+    <script>
+    document.getElementById('tony').addEventListener('click', function() {
+        var word = document.getElementById('wordcloud');
+        var title = document.getElementById('title');
+        word.setAttribute('src','Tonyword.png');
+        word.setAttribute('width','400px');
+        title.innerHTML = 'Word Cloud for Tony Stark';
+        });
+
+    document.getElementById('pepper').addEventListener('click', function() {
+        var word = document.getElementById('wordcloud');
+        var title = document.getElementById('title');
+        word.setAttribute('src','pepperWord.png');
+        word.setAttribute('width','400px');
+        title.innerHTML = 'Word Cloud for Pepper';
+        });
+
+    document.getElementById('jarvis').addEventListener('click', function() {
+        var word = document.getElementById('wordcloud');
+        var title = document.getElementById('title');
+        word.setAttribute('src','Jarvisword.png');
+        word.setAttribute('width','400px');
+        title.innerHTML = 'Word Cloud for Jarvis';
+        });
+</script>
+    
+   
+            
+</body>
+</html>
